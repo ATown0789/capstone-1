@@ -7,24 +7,23 @@
 
 <h2>1. Understanding the Problem</h2>
 
-- Design
-  - Welcome Page
-    - Simple and inviting
-  - Buy Music Page
-    - Contain both physical and digital media options
-      - Option to buy entire album digitally or individual songs
-      - On-click of album art, show detail view that includes songs on album as well as all other pertant information.
-  - About page
-    - Simple about with CTA at bottom
-  - Upcomming Shows page
-    - Contain a calendar of events ideally from reverbnation
-  - Contact Page
-    - Contain a form and maybe a calendly calendar
-  - Photos Page
-  - Videos Page
-  - Shopping Cart Page
-    - Allow customers to see what has been purchased, edit contents of cart, and buy.
-  - Easy navigation
+- Welcome Page
+  - Simple and inviting
+- Buy Music Page
+  - Contain both physical and digital media options
+    - Option to buy entire album digitally or individual songs
+    - On-click of album art, show detail view that includes songs on album as well as all other pertant information.
+- About page
+  - Simple about with CTA at bottom
+- Upcomming Shows page
+  - Contain a calendar of events ideally from reverbnation
+- Contact Page
+  - Contain a form and maybe a calendly calendar
+- Photos Page
+- Videos Page
+- Shopping Cart Page
+  - Allow customers to see what has been purchased, edit contents of cart, and buy.
+- Easy navigation
 
 <h2>
     2. Planning the Solution
