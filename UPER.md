@@ -7,6 +7,18 @@
 
 <h2>1. Understanding the Problem</h2>
 
+I am tasked with building a SPA, online "storefront" that includes a product view, shopping cart view, product detail view, search functionality, and an inventory of at least 10 items. I was asked earlier this year to make a website for a local musician and thought the capstone requirements fit perfectly with his requirement.
+
+There are a few additional requirements that are out of the scope of this capstone, but this capstone is a great way to get an MVP for the client.
+
+This is my first time going through any simblance of a planning process before diving into a project.
+
+I will be using Figma for the first time and assume there will be a learning curve in order to get my wireframe put together.
+
+I have also never made a SPA that used any sort of search functionality or integrated payment. The integrated 3rd party payment processing is required because this will be a live site used for buying and selling digital and physical media.
+
+<h3>What the SPA will contain:</h3>
+
 - Welcome Page
   - Simple and inviting
 - Buy Music Page
