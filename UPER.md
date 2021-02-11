@@ -35,7 +35,8 @@
   - Create components for each product and fill with necessary information
   - Create button component for add to cart, preview song, and buy now functionality
   - Create component for pop-out modals when click on album art.
-- Search functionality (I have no idea).
+- Search functionality
+  - I'm not sure where this will go or how it will look
 - Use SCSS for styling
 - Animations if I have time
 
