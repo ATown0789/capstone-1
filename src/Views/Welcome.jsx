@@ -1,6 +1,6 @@
 import React from "react";
 
-function Welcome({ weather }) {
+function Welcome() {
   return (
     <div>
       <h1>Welcome Page </h1>

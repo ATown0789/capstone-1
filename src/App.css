@@ -7,7 +7,7 @@ article {
   margin: auto;
 }
 
-.politics{
+.politics {
   width: 80%;
   word-break: break-all;
 }
@@ -74,4 +74,12 @@ li {
 
 img {
   max-width: 60%;
+}
+
+.description {
+  width: 50%;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  background: green;
 }

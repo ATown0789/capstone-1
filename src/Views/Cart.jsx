@@ -1,11 +1,13 @@
 import React from "react";
-import Product from "../Components/Product";
+import CartItem from "../Components/CartItem";
 
-function Cart() {
+function Cart({ cart, removeItem }) {
   return (
     <div>
       <h1>Shopping Cart</h1>
-      <Product />
+      {cart.map((product) => (
+        <CartItem removeItem={removeItem} product={product} />
+      ))}
     </div>
   );
 }
