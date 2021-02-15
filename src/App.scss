@@ -83,3 +83,12 @@ img {
   background: green;
   overflow-y: scroll;
 }
+
+.add-cart-modal {
+  width: 300px;
+  height: 100px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: orange;
+}
