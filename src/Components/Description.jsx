@@ -12,6 +12,11 @@ function Description({ close, show, album }) {
       <p>{album.released}</p>
       <p>{album.price}</p>
       <p>{album.quantity}</p>
+      <ul>
+        {album.songs.map((song) => (
+          <li>{song}</li>
+        ))}
+      </ul>
       <button onClick={handleClick}>Close</button>
     </div>
   );

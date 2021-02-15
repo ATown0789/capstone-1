@@ -22,6 +22,7 @@ function Product({ album, addCart, toggleDes }) {
       <h2>{album.title}</h2>
       <Description close={closeDes} show={showDes} album={album} />
       <img
+        className="albumCover"
         src={album.image}
         onClick={handleImgClick}
         alt={`album art for ${album.title}`}

@@ -23,8 +23,6 @@ nav {
 }
 
 ul {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 a {
@@ -78,8 +76,10 @@ img {
 
 .description {
   width: 50%;
+  height: 50%;
   position: fixed;
   top: 20%;
   left: 30%;
   background: green;
+  overflow-y: scroll;
 }

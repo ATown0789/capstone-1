@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import NavBar from "./Components/NavBar";
 import Cart from "./Views/Cart";
 import Welcome from "./Views/Welcome";
@@ -19,6 +19,10 @@ function App() {
 
   const removeItem = (product) => {
     setCart(cart.filter((item) => item.title != product.title));
+  };
+
+  const search = (currentProds, query) => {
+    const newProds = currentProds.filter((prod) => prod.title == query);
   };
 
   useEffect(() => {
