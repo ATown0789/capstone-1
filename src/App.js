@@ -21,10 +21,6 @@ function App() {
     setCart(cart.filter((item) => item.title != product.title));
   };
 
-  const search = (currentProds, query) => {
-    const newProds = currentProds.filter((prod) => prod.title == query);
-  };
-
   useEffect(() => {
     axios.get("./data.json").then(({ data }) => {
       setProducts([{ loaded: true }, data]);
