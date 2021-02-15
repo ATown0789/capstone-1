@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Description from "../Components/Description";
 import AddCart from "../Components/AddCart";
 
-function Product({ album, addCart }) {
+function Product({ album, addToCart }) {
   const [showDes, setShowDes] = useState(false);
   const [showAdd, setShowAdd] = useState(false);
   const hanldeClick = () => {
-    addCart(album);
+    addToCart(album);
     setShowAdd(true);
     setTimeout(() => {
       setShowAdd(false);

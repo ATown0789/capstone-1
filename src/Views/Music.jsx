@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Product from "../Components/Product";
 
-function Music({ products, addCart }) {
+function Music({ products, addToCart }) {
   const [value, setValue] = useState("");
 
   let filterProds = products.filter(
@@ -22,9 +22,11 @@ function Music({ products, addCart }) {
         placehodler="search by album title"
       ></input>
       {!value
-        ? products.map((album) => <Product addCart={addCart} album={album} />)
+        ? products.map((album) => (
+            <Product addToCart={addToCart} album={album} />
+          ))
         : filterProds.map((album) => (
-            <Product addCart={addCart} album={album} />
+            <Product addToCart={addToCart} album={album} />
           ))}
     </div>
   );

@@ -13,16 +13,17 @@ function App() {
   const [products, setProducts] = useState([{ loaded: false }]);
   const [cart, setCart] = useState([]);
 
-  const addCart = (product) => {
+  const addToCart = (product) => {
     if (cart.findIndex((album) => album.title == product.title) != -1) {
-      if (!product.quantity) product.quantity = 2;
-      else product.quantity += 1;
-
+      product.quantity += 1;
       let indexNum = cart.findIndex((album) => album.title == product.title);
       const newCart = [...cart];
       newCart.splice(indexNum, 1, product);
       setCart([...newCart]);
-    } else setCart([...cart, product]);
+    } else {
+      product.quantity = 1;
+      setCart([...cart, product]);
+    }
   };
 
   const removeItem = (product) => {
@@ -52,7 +53,7 @@ function App() {
               <Welcome />
             </Route>
             <Route path="/buy-music">
-              <Music addCart={addCart} products={products[1]} />
+              <Music addToCart={addToCart} products={products[1]} />
             </Route>
             <Route path="/about">
               <About />

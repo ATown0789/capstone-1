@@ -10,7 +10,7 @@ function CartItem({ product, removeItem }) {
       <h2>{product.title}</h2>
       <img src={product.image} alt={`product art for ${product.title}`} />
       <p>${product.price}</p>
-      <p>Quantity: {product.quantity ? product.quantity : 1}</p>
+      <p>Quantity: {product.quantity}</p>
       <button type="button" onClick={handleClick}>
         Remove Item
       </button>
