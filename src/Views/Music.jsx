@@ -4,9 +4,14 @@ import Product from "../Components/Product";
 function Music({ products, addCart }) {
   const [value, setValue] = useState("");
 
-  let filterProds = products.filter((album) =>
-    album.title.toLowerCase().includes(value.toLowerCase())
+  let filterProds = products.filter(
+    (album) =>
+      album.title.toLowerCase().includes(value.toLowerCase()) ||
+      album.songs.some((song) =>
+        song.toLowerCase().includes(value.toLowerCase())
+      )
   );
+
   return (
     <div>
       <h1>This is the Music Product Page</h1>
