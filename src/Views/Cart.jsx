@@ -13,7 +13,7 @@ function Cart({ cart, removeItem }) {
   total = tax + subtotal;
 
   return (
-    <div>
+    <div id="cart">
       <h1>Shopping Cart</h1>
       {cart.map((product) => (
         <CartItem removeItem={removeItem} product={product} />

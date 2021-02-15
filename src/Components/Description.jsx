@@ -3,17 +3,19 @@ import React from "react";
 function Description({ album }) {
   return (
     <div className="description">
-      <div>This is a description</div>
       <h2>{album.title}</h2>
-      <p>{album.artist}</p>
-      <p>{album.released}</p>
-      <p>{album.price}</p>
-      <p>{album.quantity}</p>
-      <ul>
+      <p>Artist: {album.artist}</p>
+      <p>Released: {album.released}</p>
+      <p>Price: {album.price}</p>
+      <p># in stock{album.inStock}</p>
+      <h4>Songs</h4>
+      <ol>
         {album.songs.map((song) => (
-          <li>{song}</li>
+          <li>
+            <p>{song}</p>
+          </li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 }

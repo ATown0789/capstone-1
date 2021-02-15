@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Route } from "react-router-dom";
-import "./App.scss";
+import { Route, useLocation } from "react-router-dom";
+import "./Styles/App.scss";
 import NavBar from "./Components/NavBar";
 import Cart from "./Views/Cart";
 import Welcome from "./Views/Welcome";
@@ -12,6 +12,10 @@ import axios from "axios";
 function App() {
   const [products, setProducts] = useState([{ loaded: false }]);
   const [cart, setCart] = useState([]);
+
+  const { pathname } = useLocation();
+
+  console.log(pathname);
 
   const addToCart = (product) => {
     if (cart.findIndex((album) => album.title == product.title) != -1) {
@@ -39,32 +43,26 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavBar />
-        <div>
-          <br />
-          <p>Create a David's Site</p>
-          <p>Set up a Single Page Application (SPA) with react-router</p>
-        </div>
-        {!products[0].loaded ? (
-          <h1> Loading...</h1>
-        ) : (
-          <>
-            <Route exact path="/">
-              <Welcome />
-            </Route>
-            <Route path="/buy-music">
-              <Music addToCart={addToCart} products={products[1]} />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/shopping-cart">
-              <Cart removeItem={removeItem} cart={cart} />
-            </Route>
-          </>
-        )}
+        {pathname !== "/" ? <NavBar /> : null}
       </header>
-      <Footer />
+      {!products[0].loaded ? (
+        <h1> Loading...</h1>
+      ) : (
+        <>
+          <Route exact path="/">
+            <Welcome />
+          </Route>
+          <Route path="/shop-music">
+            <Music addToCart={addToCart} products={products[1]} />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/shopping-cart">
+            <Cart removeItem={removeItem} cart={cart} />
+          </Route>
+        </>
+      )}
     </div>
   );
 }

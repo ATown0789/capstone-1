@@ -6,14 +6,16 @@ function CartItem({ product, removeItem }) {
   };
 
   return (
-    <div>
-      <h2>{product.title}</h2>
+    <div className="cartItem">
       <img src={product.image} alt={`product art for ${product.title}`} />
-      <p>${product.price}</p>
-      <p>Quantity: {product.quantity}</p>
-      <button type="button" onClick={handleClick}>
-        Remove Item
-      </button>
+      <div className="cartInfo">
+        <h2>{product.title}</h2>
+        <p>${product.price}</p>
+        <p>Quantity: {product.quantity}</p>
+      </div>
+      <div id="btnCont" onClick={handleClick}>
+        <i className="fa fa-trash" aria-hidden="true"></i>
+      </div>
     </div>
   );
 }

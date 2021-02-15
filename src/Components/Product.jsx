@@ -24,7 +24,7 @@ function Product({ album, addToCart }) {
   };
 
   return (
-    <div>
+    <div className="album">
       <h2>{album.title}</h2>
       {showDes ? <Description album={album} /> : null}
       {showAdd ? <AddCart album={album} /> : null}

@@ -1,0 +1,106 @@
+/****** Navigation Styles ******/
+nav {
+  width: 100%;
+  height: 100px;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  background: rgb(40, 40, 40);
+  box-shadow: 0 1px 20px black;
+}
+
+#navMenu {
+  padding: 10px 0;
+  margin: 0;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  background: rgb(40, 40, 40);
+  transition: max-height 0.6s ease;
+}
+
+.menuItem {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.menuItem:hover {
+  background: lightgray;
+  color: black;
+}
+
+#navCheck {
+  display: none;
+}
+
+#navBtn {
+  float: right;
+  margin-top: 30px;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+.menuBar,
+.menuBar:before,
+.menuBar:after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: lightgray;
+  height: 5px;
+  width: 40px;
+  border-radius: 8px;
+  transition: all 0.6s ease;
+}
+
+.menuBar {
+  position: relative;
+  transition: background 0.6s ease;
+}
+
+.menuBar:before {
+  top: -14px;
+}
+
+.menuBar:after {
+  top: 14px;
+}
+
+#navCheck:checked ~ #navMenu {
+  max-height: 300px;
+}
+
+#navCheck:checked ~ #navBtn .menuBar:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#navCheck:checked ~ #navBtn .menuBar:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+#navCheck:checked ~ #navBtn .menuBar {
+  background: transparent;
+}
+
+#cartImage {
+  position: fixed;
+  color: $text-color;
+  height: 80px;
+  width: 80px;
+  left: 10px;
+  top: 10px;
+  z-index: 2;
+}
+
+/****** End Navigation Styles ******/

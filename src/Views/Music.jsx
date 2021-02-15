@@ -13,14 +13,14 @@ function Music({ products, addToCart }) {
   );
 
   return (
-    <div>
-      <h1>This is the Music Product Page</h1>
+    <div id="music">
+      <h1>Music</h1>
       <input
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        placehodler="search by album title"
-      ></input>
+        placeholder="search by album or song title"
+      />
       {!value
         ? products.map((album) => (
             <Product addToCart={addToCart} album={album} />
