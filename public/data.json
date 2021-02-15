@@ -22,7 +22,7 @@
     "price": 24.95,
     "mediaType": ["cd", "mp4"],
     "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948",
-    "quantity": 10
+    "inStock": 10
   },
   {
     "title": "As Time Goes By",
@@ -49,7 +49,7 @@
     "price": 24.95,
     "mediaType": ["cd", "mp4"],
     "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258",
-    "quantity": 10
+    "inStock": 10
   },
   {
     "title": "You Are The Words And Music",
@@ -86,7 +86,7 @@
     "price": 24.95,
     "mediaType": ["cd", "mp4"],
     "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg",
-    "quantity": 10
+    "inStock": 10
   },
   {
     "title": "Be With Me",
@@ -108,6 +108,6 @@
     "price": 24.95,
     "mediaType": ["cd", "mp4"],
     "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg",
-    "quantity": 10
+    "inStock": 10
   }
 ]

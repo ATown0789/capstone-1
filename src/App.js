@@ -14,7 +14,15 @@ function App() {
   const [cart, setCart] = useState([]);
 
   const addCart = (product) => {
-    setCart([...cart, product]);
+    if (cart.findIndex((album) => album.title == product.title) != -1) {
+      if (!product.quantity) product.quantity = 2;
+      else product.quantity += 1;
+
+      let indexNum = cart.findIndex((album) => album.title == product.title);
+      const newCart = [...cart];
+      newCart.splice(indexNum, 1, product);
+      setCart([...newCart]);
+    } else setCart([...cart, product]);
   };
 
   const removeItem = (product) => {
