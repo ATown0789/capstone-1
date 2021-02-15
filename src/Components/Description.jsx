@@ -1,10 +1,7 @@
 import React from "react";
 
-function Description({ close, show, album }) {
-  const handleClick = () => {
-    close();
-  };
-  return !show ? null : (
+function Description({ album }) {
+  return (
     <div className="description">
       <div>This is a description</div>
       <h2>{album.title}</h2>
@@ -17,7 +14,6 @@ function Description({ close, show, album }) {
           <li>{song}</li>
         ))}
       </ul>
-      <button onClick={handleClick}>Close</button>
     </div>
   );
 }
