@@ -34,11 +34,13 @@ function App() {
       product.quantity = 1;
       setCart([...cart, product]);
     }
-    console.log(cartNum);
   };
 
   const removeItem = (product) => {
     setCart(cart.filter((item) => item.title != product.title));
+
+    const newCartNum = cartNum - product.quantity;
+    setCartNum(newCartNum);
   };
 
   useEffect(() => {
