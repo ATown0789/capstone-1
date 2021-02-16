@@ -15,19 +15,19 @@ function Product({ album, addToCart }) {
 
   const handleImgClick = () => {
     setShowDes(true);
-    document.addEventListener("mousedown", closeDes);
   };
 
   const closeDes = () => {
     setShowDes(false);
-    document.removeEventListener("mousedown", closeDes);
   };
 
   return (
     <div className="album">
       <h2>{album.title}</h2>
-      {showDes ? <Description album={album} /> : null}
-      {showAdd ? <AddCart album={album} /> : null}
+      {showDes ? (
+        <Description closeDes={closeDes} addToCart={addToCart} album={album} />
+      ) : null}
+      {showAdd ? <AddCart product={album} /> : null}
       <img
         className="albumCover"
         src={album.image}

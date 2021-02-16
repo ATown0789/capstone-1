@@ -1,10 +1,10 @@
 import React from "react";
 
-function AddCart({ album }) {
+function AddCart({ product }) {
   return (
     <div className="add-cart-modal">
       <h3>
-        Added <i>"{album.title}"</i> to cart
+        Added <i>"{product.title}"</i> to cart
       </h3>
     </div>
   );

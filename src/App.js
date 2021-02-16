@@ -18,9 +18,9 @@ function App() {
   console.log(pathname);
 
   const addToCart = (product) => {
-    if (cart.findIndex((album) => album.title == product.title) != -1) {
+    if (cart.findIndex((item) => item.title == product.title) != -1) {
       product.quantity += 1;
-      let indexNum = cart.findIndex((album) => album.title == product.title);
+      let indexNum = cart.findIndex((item) => item.title == product.title);
       const newCart = [...cart];
       newCart.splice(indexNum, 1, product);
       setCart([...newCart]);
