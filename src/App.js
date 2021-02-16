@@ -16,6 +16,10 @@ function App() {
 
   const { pathname } = useLocation();
 
+  const resetCartNum = () => {
+    setCartNum(0);
+  };
+
   const addToCart = (product) => {
     const newCartNum = cartNum + 1;
     setCartNum(newCartNum);
@@ -62,7 +66,11 @@ function App() {
             <About />
           </Route>
           <Route path="/shopping-cart">
-            <Cart removeItem={removeItem} cart={cart} />
+            <Cart
+              resetCartNum={resetCartNum}
+              removeItem={removeItem}
+              cart={cart}
+            />
           </Route>
         </>
       )}
