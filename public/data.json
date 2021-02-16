@@ -2,19 +2,71 @@
   {
     "title": "Nice and Easy",
     "songs": [
-      "Ain't That a Kick in the Head",
-      "The Very Thought of You",
-      "Nice 'N' Easy",
-      "They Can't Take That Away from Me",
-      "Sentimental Me",
-      "Witchcraft",
-      "Nice Work if You Can Get it",
-      "The Tender Trap",
-      "I've Got You Under My Skin",
-      "Fly Me to The Moon",
-      "Young at Heart",
-      "Flaming Start",
-      "I'll Be Seeing You"
+      {
+        "title": "Ain't That a Kick in the Head",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "The Very Thought of You",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "Nice 'N' Easy",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "They Can't Take That Away from Me",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "Sentimental Me",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "Witchcraft",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "Nice Work if You Can Get it",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "The Tender Trap",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "I've Got You Under My Skin",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "Fly Me to The Moon",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "Young at Heart",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "Flaming Start",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      },
+      {
+        "title": "I'll Be Seeing You",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/1525766/original/crop:x0y0w600h600/hash:1463111948/Nice_And_Easy_cover_1256103375.jpg?1463111948"
+      }
     ],
     "artist": "David Slater",
     "released": "2005",
@@ -27,21 +79,81 @@
   {
     "title": "As Time Goes By",
     "songs": [
-      "Day in, Day out",
-      "Don't Worry 'Bout Me",
-      "Come Fly with Me",
-      "It Never Entered My Mind",
-      "You Make Me Feel so Young",
-      "As Time Goes By",
-      "Oh! Look at Me Now",
-      "Summer Wind",
-      "I Concentrate on You",
-      "All of Me",
-      "Something Stupid",
-      "Where or When",
-      "In the Wee Small Hours of the Morning",
-      "The Best Is Yet to Come",
-      "Put Your Dreams Away"
+      {
+        "title": "Day in, Day out",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "Don't Worry 'Bout Me",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "Come Fly with Me",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "It Never Entered My Mind",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "You Make Me Feel so Young",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "As Time Goes By",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "Oh! Look at Me Now",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "Summer Wind",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "I Concentrate on You",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "All of Me",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "Something Stupid",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "Where or When",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "In the Wee Small Hours of the Morning",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "The Best Is Yet to Come",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      },
+      {
+        "title": "Put Your Dreams Away",
+        "price": 0.99,
+        "image": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/photos/images/26896005/original/crop:x0y0w1693h1693/hash:1468880258/IMG_1857.JPG?1468880258"
+      }
     ],
     "artist": "David Slater",
     "released": "2012",
@@ -54,31 +166,131 @@
   {
     "title": "You Are The Words And Music",
     "songs": [
-      "On Bended Knee I come",
-      "Open My Eyes Lord",
-      "Turn Your Eyes UPon Jesus",
-      "Have you Seen Jesus My Lord?",
-      "O How He Loves You And Me",
-      "I Am Mine No More",
-      "I Cast All My Cares Upon You",
-      "He Is Lord/ Holy Father Grant Us Peace",
-      "Come Let Us Worship And Bow Down",
-      "In His Time",
-      "You Are The Song That I Sing",
-      "Into My Heart",
-      "We Will Glorify",
-      "God Is So Good",
-      "Bless The Lord, O My Soul",
-      "Thank You, Lord",
-      "Be Still And Know",
-      "I Want To Know Christ",
-      "Praise The Name Of Jesus",
-      "Without Him",
-      "He Paid A Debt/ Something Beautiful",
-      "Jesus, Let Us Come To Know You",
-      "Worthy The Lamb That Was Slain",
-      "I Love You With The Love Of The Lord",
-      "Whisper A Prayer"
+      {
+        "title": "On Bended Knee I come",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Open My Eyes Lord",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Turn Your Eyes UPon Jesus",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Have you Seen Jesus My Lord?",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "O How He Loves You And Me",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "I Am Mine No More",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "I Cast All My Cares Upon You",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "He Is Lord/ Holy Father Grant Us Peace",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Come Let Us Worship And Bow Down",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "In His Time",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "You Are The Song That I Sing",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Into My Heart",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "We Will Glorify",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "God Is So Good",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Bless The Lord, O My Soul",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Thank You, Lord",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Be Still And Know",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "I Want To Know Christ",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Praise The Name Of Jesus",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Without Him",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "He Paid A Debt/ Something Beautiful",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Jesus, Let Us Come To Know You",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Worthy The Lamb That Was Slain",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "I Love You With The Love Of The Lord",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      },
+      {
+        "title": "Whisper A Prayer",
+        "price": 0.99,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/515AjKGUc2L._SX466_.jpg"
+      }
     ],
     "artist": "David Slater",
     "released": "2008",
@@ -91,16 +303,56 @@
   {
     "title": "Be With Me",
     "songs": [
-      "Be With Me",
-      "One of My Reasons Why",
-      "She Will",
-      "We Fell in Love Anyway",
-      "Between a Rock and a Heartbreak",
-      "No More Tears",
-      "That Close",
-      "Whatcha Gonna Do About Her",
-      "From Now On",
-      "Nothin' Like Love"
+      {
+        "title": "Be With Me",
+        "price": 0.99,
+        "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg"
+      },
+      {
+        "title": "One of My Reasons Why",
+        "price": 0.99,
+        "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg"
+      },
+      {
+        "title": "She Will",
+        "price": 0.99,
+        "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg"
+      },
+      {
+        "title": "We Fell in Love Anyway",
+        "price": 0.99,
+        "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg"
+      },
+      {
+        "title": "Between a Rock and a Heartbreak",
+        "price": 0.99,
+        "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg"
+      },
+      {
+        "title": "No More Tears",
+        "price": 0.99,
+        "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg"
+      },
+      {
+        "title": "That Close",
+        "price": 0.99,
+        "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg"
+      },
+      {
+        "title": "Whatcha Gonna Do About Her",
+        "price": 0.99,
+        "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg"
+      },
+      {
+        "title": "From Now On",
+        "price": 0.99,
+        "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg"
+      },
+      {
+        "title": "Nothin' Like Love",
+        "price": 0.99,
+        "image": "https://img.discogs.com/O6GO3cKGXjDXNP5ddi-93kRoXSc=/fit-in/600x598/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-12251388-1531446538-3383.jpeg.jpg"
+      }
     ],
     "artist": "David Slater",
     "released": "1989",
