@@ -1,5 +1,25 @@
 $modal-background: rgb(92, 92, 92);
 
+#closeCont {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -25%;
+  margin-left: -23%;
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  width: 49%;
+  font-size: 2.5rem;
+}
+
+#closeBtn {
+  cursor: pointer;
+  position: fixed;
+  padding: 7px;
+  font-weight: 600;
+}
+
 .description {
   display: flex;
   flex-direction: column;

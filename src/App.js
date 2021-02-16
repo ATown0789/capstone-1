@@ -12,12 +12,14 @@ import axios from "axios";
 function App() {
   const [products, setProducts] = useState([{ loaded: false }]);
   const [cart, setCart] = useState([]);
+  const [cartNum, setCartNum] = useState(0);
 
   const { pathname } = useLocation();
 
-  console.log(pathname);
-
   const addToCart = (product) => {
+    const newCartNum = cartNum + 1;
+    setCartNum(newCartNum);
+
     if (cart.findIndex((item) => item.title == product.title) != -1) {
       product.quantity += 1;
       let indexNum = cart.findIndex((item) => item.title == product.title);
@@ -28,6 +30,7 @@ function App() {
       product.quantity = 1;
       setCart([...cart, product]);
     }
+    console.log(cartNum);
   };
 
   const removeItem = (product) => {
@@ -43,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {pathname !== "/" ? <NavBar /> : null}
+        {pathname !== "/" ? <NavBar cartNum={cartNum} /> : null}
       </header>
       {!products[0].loaded ? (
         <h1> Loading...</h1>

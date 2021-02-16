@@ -23,7 +23,9 @@ class Description extends React.Component {
     const { closeDes, album } = this.props;
     return (
       <div className="description">
-        <div onClick={closeDes}>X</div>
+        <div id="closeCont" onClick={closeDes}>
+          <div id="closeBtn">X</div>
+        </div>
         <h2>{album.title}</h2>
         <p>Artist: {album.artist}</p>
         <p>Released: {album.released}</p>
