@@ -1,5 +1,6 @@
 import React from "react";
 import CartItem from "../Components/CartItem";
+import { Link } from "react-router-dom";
 
 function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
   const [paid, setPaid] = React.useState(false);
@@ -57,6 +58,14 @@ function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
     <div id="cart">
       {error && <div>Uh oh, and error occured! {error.message}</div>}
       <h1>Shopping Cart</h1>
+      {!cart.length && (
+        <>
+          <h1>Empty!</h1>
+          <Link to="/shop-music">
+            <h3>Continue Shopping!</h3>
+          </Link>
+        </>
+      )}
       {paid ? (
         <h1>Payment Successful!!</h1>
       ) : (
@@ -69,10 +78,18 @@ function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
           />
         ))
       )}
-      <h4>Subtotal: ${subtotal.toFixed(2)}</h4>
-      <h5>Tax: ${tax.toFixed(2)}</h5>
-      <h3>Total: ${total.toFixed(2)}</h3>
-      <div ref={paypalRef} />
+
+      {!!cart.length && (
+        <>
+          <h4>Subtotal: ${subtotal.toFixed(2)}</h4>
+          <h5>Tax: ${tax.toFixed(2)}</h5>
+          <h3>Total: ${total.toFixed(2)}</h3>
+          <Link to="/shop-music">
+            <h3>Continue Shopping?</h3>
+          </Link>
+          <div ref={paypalRef} />
+        </>
+      )}
     </div>
   );
 }
