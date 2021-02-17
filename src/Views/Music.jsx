@@ -8,7 +8,7 @@ function Music({ products, addToCart }) {
     (album) =>
       album.title.toLowerCase().includes(value.toLowerCase()) ||
       album.songs.some((song) =>
-        song.toLowerCase().includes(value.toLowerCase())
+        song.title.toLowerCase().includes(value.toLowerCase())
       )
   );
 
