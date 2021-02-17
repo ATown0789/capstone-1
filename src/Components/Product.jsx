@@ -10,7 +10,7 @@ function Product({ album, addToCart }) {
     setShowAdd(true);
     setTimeout(() => {
       setShowAdd(false);
-    }, 4000);
+    }, 2000);
   };
 
   const handleImgClick = () => {

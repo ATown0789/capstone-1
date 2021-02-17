@@ -15,9 +15,9 @@ class Description extends React.Component {
       showAdd: true,
       song: song,
     });
-    // setTimeout(() => {
-    //   this.setState({ showAdd: false });
-    // }, 4000);
+    setTimeout(() => {
+      this.setState({ showAdd: false });
+    }, 2000);
   };
   render() {
     const { closeDes, album } = this.props;
