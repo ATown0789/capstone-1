@@ -15,9 +15,9 @@ class Description extends React.Component {
       showAdd: true,
       song: song,
     });
-    setTimeout(() => {
-      this.setState({ showAdd: false });
-    }, 4000);
+    // setTimeout(() => {
+    //   this.setState({ showAdd: false });
+    // }, 4000);
   };
   render() {
     const { closeDes, album } = this.props;
@@ -30,13 +30,12 @@ class Description extends React.Component {
         <p>Artist: {album.artist}</p>
         <p>Released: {album.released}</p>
         <p>Price: {album.price}</p>
-        <p># in stock{album.inStock}</p>
         <h4>Songs</h4>
         <ol>
           {album.songs.map((song) => (
             <li className="song">
               <p>{song.title}</p>
-              <p>{song.price}</p>
+              <p>${song.price}</p>
               <button
                 type="button"
                 value={song}
@@ -44,12 +43,10 @@ class Description extends React.Component {
               >
                 Add to cart
               </button>
-              {this.state.showAdd ? (
-                <AddCart product={this.state.song} />
-              ) : null}
             </li>
           ))}
         </ol>
+        {this.state.showAdd && <AddCart product={this.state.song} />}
       </div>
     );
   }

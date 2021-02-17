@@ -24,10 +24,10 @@ function Product({ album, addToCart }) {
   return (
     <div className="album">
       <h2>{album.title}</h2>
-      {showDes ? (
+      {showDes && (
         <Description closeDes={closeDes} addToCart={addToCart} album={album} />
-      ) : null}
-      {showAdd ? <AddCart product={album} /> : null}
+      )}
+      {showAdd && <AddCart product={album} />}
       <img
         className="albumCover"
         src={album.image}

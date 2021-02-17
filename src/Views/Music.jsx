@@ -14,13 +14,18 @@ function Music({ products, addToCart }) {
 
   return (
     <div id="music">
+      <div className="inputCont">
+        <i className="fas fa-search" />
+        <input
+          type="text"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          placeholder="search by album or song title"
+        />
+      </div>
       <h1>Music</h1>
-      <input
-        type="text"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-        placeholder="search by album or song title"
-      />
+      <p>Click Album Cover For Info</p>
+
       {!value
         ? products.map((album) => (
             <Product addToCart={addToCart} album={album} />

@@ -26,7 +26,7 @@ function App() {
 
     if (cart.findIndex((item) => item.title == product.title) != -1) {
       product.quantity += 1;
-      let indexNum = cart.findIndex((item) => item.title == product.title);
+      const indexNum = cart.findIndex((item) => item.title == product.title);
       const newCart = [...cart];
       newCart.splice(indexNum, 1, product);
       setCart([...newCart]);
@@ -40,6 +40,27 @@ function App() {
     setCart(cart.filter((item) => item.title != product.title));
 
     const newCartNum = cartNum - product.quantity;
+    setCartNum(newCartNum);
+  };
+
+  const plus = (product) => {
+    product.quantity++;
+    const indexNum = cart.findIndex((item) => item.title == product.title);
+    const newCart = [...cart];
+    newCart.splice(indexNum, 1, product);
+    setCart([...newCart]);
+
+    const newCartNum = cartNum + 1;
+    setCartNum(newCartNum);
+  };
+
+  const minus = (product) => {
+    product.quantity--;
+    const indexNum = cart.findIndex((item) => item.title == product.title);
+    const newCart = [...cart];
+    newCart.splice(indexNum, 1, product);
+    setCart([...newCart]);
+    const newCartNum = cartNum - 1;
     setCartNum(newCartNum);
   };
 
@@ -72,6 +93,8 @@ function App() {
               resetCartNum={resetCartNum}
               removeItem={removeItem}
               cart={cart}
+              plus={plus}
+              minus={minus}
             />
           </Route>
         </>

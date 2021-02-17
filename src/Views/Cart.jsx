@@ -1,7 +1,7 @@
 import React from "react";
 import CartItem from "../Components/CartItem";
 
-function Cart({ resetCartNum, cart, removeItem }) {
+function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
   const [paid, setPaid] = React.useState(false);
   const [error, setError] = React.useState(null);
 
@@ -61,7 +61,12 @@ function Cart({ resetCartNum, cart, removeItem }) {
         <h1>Payment Successful!!</h1>
       ) : (
         cart.map((product) => (
-          <CartItem removeItem={removeItem} product={product} />
+          <CartItem
+            plus={plus}
+            minus={minus}
+            removeItem={removeItem}
+            product={product}
+          />
         ))
       )}
       <h4>Subtotal: ${subtotal.toFixed(2)}</h4>
