@@ -38,7 +38,7 @@ function NavBar({ cartNum }) {
             </Link>
           </li>
           <li>
-            <Link className="menuItem" to="/shopping-cart">
+            <Link id="cartLink" className="menuItem" to="/shopping-cart">
               Shopping Cart <span id="inlineNum">{cartNum}</span>
             </Link>
           </li>

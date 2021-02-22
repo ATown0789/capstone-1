@@ -99,11 +99,9 @@ nav {
   height: 80px;
   width: 80px;
   left: 10px;
-  top: 10px;
+  top: 15px;
   z-index: 2;
 }
-
-/****** End Navigation Styles ******/
 
 #cartNum {
   position: fixed;
@@ -130,4 +128,33 @@ nav {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 801px) {
+  #navBtn {
+    display: none;
+  }
+
+  .menuItem {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  #navMenu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    max-height: none;
+    height: auto;
+  }
+
+  #cartLink {
+    display: none;
+  }
+
+  #cartImage {
+    top: 32px;
+  }
 }

@@ -27,6 +27,7 @@
   .inputCont {
     align-self: flex-start;
     font-size: 2rem;
+    display: flex;
   }
 
   input {
@@ -54,4 +55,20 @@
 .albumCover {
   max-width: 300px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 801px) {
+  .inputCont {
+    position: fixed;
+    top: 42px;
+    right: 50px;
+    z-index: 2;
+    padding: 7px;
+    font-size: 1.6rem;
+    width: 210px;
+  }
+
+  .fa-search {
+    font-size: 2.6rem;
+  }
 }
