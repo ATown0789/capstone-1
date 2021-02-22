@@ -87,6 +87,9 @@ I have also never made a SPA that used any sort of search functionality or integ
 
   - The add to cart button added multiple products of the same type to the cart as separate items instead of increasing the quantity. This was my biggest unforseen challenge.
   - The modal for the descriptions was also a little tricky because I needed an easier way to close the modal. I added an eventlistener to close the modal on the next mousedown.
+    - I quickly realized this would not work once I tried to make each song a product because I could not click on the add to cart button without the eventlistner closing the modal.
   - Getting the search function to search all of the songs in the album as well as the title was challenging, but was not unexpected.
+  - After usig FTP to host my files on my own domain, when I would refresh my page I kept getting a 404 error. After some searching I found that I needed to include a .htaccess file with telling the server what to do upon refresh.
+  - Adding each individual song as a product took some time and a bit of refactoring to acomplish. I had to change the song from a string to an object with similar keys as the rest of the album in order to reuse the same components that were already handling the album.
 
 - Something else I have learned as I have gone through building this project has been estimating time to completion. I underestimated how long this project would take, and I overestimated the amount of time I would have Valentien's day week to spend on it outside of class hours.
