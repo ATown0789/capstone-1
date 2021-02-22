@@ -26,13 +26,15 @@ function Music({ products, addToCart }) {
       <h1>Music</h1>
       <p>Click Album Cover For Info</p>
 
-      {!value
-        ? products.map((album) => (
-            <Product addToCart={addToCart} album={album} />
-          ))
-        : filterProds.map((album) => (
-            <Product addToCart={addToCart} album={album} />
-          ))}
+      {!value ? (
+        products.map((album) => <Product addToCart={addToCart} album={album} />)
+      ) : filterProds.length === 0 ? (
+        <h2>No matching titles</h2>
+      ) : (
+        filterProds.map((album) => (
+          <Product addToCart={addToCart} album={album} />
+        ))
+      )}
     </div>
   );
 }

@@ -66,7 +66,7 @@ function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
         <>
           <h1>Empty!</h1>
           <Link to="/buy-music">
-            <h3>Continue Shopping!</h3>
+            <h3>Start Shopping!</h3>
           </Link>
         </>
       )}
