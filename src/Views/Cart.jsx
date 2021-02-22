@@ -61,7 +61,7 @@ function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
       {!cart.length && (
         <>
           <h1>Empty!</h1>
-          <Link to="/shop-music">
+          <Link to="/buy-music">
             <h3>Continue Shopping!</h3>
           </Link>
         </>
@@ -84,7 +84,7 @@ function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
           <h4>Subtotal: ${subtotal.toFixed(2)}</h4>
           <h5>Tax: ${tax.toFixed(2)}</h5>
           <h3>Total: ${total.toFixed(2)}</h3>
-          <Link to="/shop-music">
+          <Link to="/buy-music">
             <h3>Continue Shopping?</h3>
           </Link>
           <div ref={paypalRef} />

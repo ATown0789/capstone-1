@@ -22,7 +22,9 @@ function CartItem({ plus, minus, product, removeItem }) {
         <p>
           Quantity: <span onClick={handleMinus}>-</span>
           {product.quantity}
-          <span onClick={handlePlus}>+</span>
+          {product.quantity + 1 <= product.inStock ? (
+            <span onClick={handlePlus}>+</span>
+          ) : null}
         </p>
       </div>
       <div id="btnCont" onClick={handleClick}>

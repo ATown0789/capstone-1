@@ -33,8 +33,8 @@ function NavBar({ cartNum }) {
             </Link>
           </li>
           <li>
-            <Link className="menuItem" to="/shop-music">
-              Shop Music
+            <Link className="menuItem" to="/buy-music">
+              Buy Music
             </Link>
           </li>
           <li>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, useLocation } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import "./Styles/App.scss";
 import NavBar from "./Components/NavBar";
 import Cart from "./Views/Cart";
@@ -44,14 +44,16 @@ function App() {
   };
 
   const plus = (product) => {
-    product.quantity++;
-    const indexNum = cart.findIndex((item) => item.title === product.title);
-    const newCart = [...cart];
-    newCart.splice(indexNum, 1, product);
-    setCart([...newCart]);
+    if (product.quantity + 1 <= product.inStock) {
+      product.quantity++;
+      const indexNum = cart.findIndex((item) => item.title === product.title);
+      const newCart = [...cart];
+      newCart.splice(indexNum, 1, product);
+      setCart([...newCart]);
 
-    const newCartNum = cartNum + 1;
-    setCartNum(newCartNum);
+      const newCartNum = cartNum + 1;
+      setCartNum(newCartNum);
+    }
   };
 
   const minus = (product) => {
@@ -82,11 +84,11 @@ function App() {
       {!products[0].loaded ? (
         <h1> Loading...</h1>
       ) : (
-        <>
+        <Switch>
           <Route exact path="/">
             <Welcome />
           </Route>
-          <Route path="/shop-music">
+          <Route path="/buy-music">
             <Music addToCart={addToCart} products={products[1]} />
           </Route>
           <Route path="/about">
@@ -101,7 +103,7 @@ function App() {
               minus={minus}
             />
           </Route>
-        </>
+        </Switch>
       )}
     </div>
   );
