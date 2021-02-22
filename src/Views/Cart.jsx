@@ -9,6 +9,7 @@ function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
   let subtotal = 0;
   let tax = 0;
   let total = 0;
+  let loading = false;
 
   cart.forEach((album) => (subtotal += album.price * album.quantity));
 
@@ -35,8 +36,10 @@ function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
           });
         },
         onApprove: async (data, actions) => {
+          loading = true;
           const order = await actions.order.capture();
           setPaid(true);
+          loading = false;
           console.log(order);
         },
         onError: (err) => {
@@ -56,6 +59,7 @@ function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
 
   return (
     <div id="cart">
+      {console.log(loading)}
       {error && <div>Uh oh, and error occured! {error.message}</div>}
       <h1>Shopping Cart</h1>
       {!cart.length && (
@@ -67,7 +71,12 @@ function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
         </>
       )}
       {paid ? (
-        <h1>Payment Successful!!</h1>
+        <>
+          <h1>Payment Successful!!</h1>
+          <Link to="/buy-music">
+            <h3>Continue Shopping</h3>
+          </Link>
+        </>
       ) : (
         cart.map((product) => (
           <CartItem
@@ -79,17 +88,19 @@ function Cart({ resetCartNum, cart, removeItem, plus, minus }) {
         ))
       )}
 
-      {!!cart.length && (
-        <>
-          <h4>Subtotal: ${subtotal.toFixed(2)}</h4>
-          <h5>Tax: ${tax.toFixed(2)}</h5>
-          <h3>Total: ${total.toFixed(2)}</h3>
-          <Link to="/buy-music">
-            <h3>Continue Shopping?</h3>
-          </Link>
-          <div ref={paypalRef} />
-        </>
-      )}
+      {cart.length && paid
+        ? null
+        : !!cart.length && (
+            <>
+              <h4>Subtotal: ${subtotal.toFixed(2)}</h4>
+              <h5>Tax: ${tax.toFixed(2)}</h5>
+              <h3>Total: ${total.toFixed(2)}</h3>
+              <Link to="/buy-music">
+                <h3>Continue Shopping?</h3>
+              </Link>
+              <div ref={paypalRef} />
+            </>
+          )}
     </div>
   );
 }
